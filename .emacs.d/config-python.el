@@ -35,7 +35,7 @@
 
 
 ; ipython
-(epy-setup-ipython)
+(setq python-shell-interpreter "ipython3")
 
 
 ; highlight indentation
