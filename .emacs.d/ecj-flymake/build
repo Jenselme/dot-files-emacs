@@ -1,0 +1,4 @@
+#!/bin/bash
+
+javac -Xlint:deprecation -d classes -classpath libs/ecj-3.7.jar -sourcepath src src/org/khelekore/Compiler.java
+jar cvmf Manifest.mf jars/compiler.jar -C classes org

@@ -1,0 +1,57 @@
+* How it is loaded
+Emacs will load automatically the ~/.emacs file. I decided for to just make it
+load the ~/.emacs.d/init.el file in order to have all the configuration in the
+same folder. I will consider that we are in ~/.emacs.d from now on.
+
+~init.el~ loads ~minimal.el~, ~programmation.el~ and ~frame.el~ and initializes the
+package manager.
+
+* Global organization
+** Plugins
+The plugins installed by the package manager (included since Emacs 24) are
+located in the ~elpa~ directory. They can be updated automatically thanks to the
+package manager.
+
+Plugins I manually installed are in the ~plugins~ directory. They must be
+updated manually.
+
+** Programming
+Each programming language is in a ~config-<language-name>.el~ file. Support
+varies from good (python) to very lite (php). I will improve support for each
+programming language when I have some time or the need to do so.
+
+** The rest
+- bepo: bindings for the bepo keyboard (not activated) and the key-chord
+  bindings (add bindings to standard keys if pressed twice)
+- ~psh.pl~: the Perl shell
+- ~ecb.el~: Emacs Code Browser
+- ~custom.el~: the Emacs' custom file
+
+* Minimal
+- Set UTF-8 as default encoding
+- Disable bell
+- Remap some dead keys
+- Load key-chword
+- Modify the calendar
+- Enables auto-fill
+- Enables spelling
+- Add plugins path to load-path
+
+* Programming
+** All languages
+- Enables and configures electric-pair-mode for pair symbols completion
+- Enables trailing white-spaces deletion
+- Enables current line highlight
+- Loads config files for each programming language
+
+** Python
+It is based on ~emacs-for-python~
+- Current indentation is highlighted
+- On the fly syntax checking
+- Ipython support
+- Jedi (contextual information such as function doc) is currently disabled
+  because it requires python-ecb which is not available as a rpm package on
+  fedora yet. I may work on that soon.
+
+** Others
+Much more basic support right now. Read the files to know what is supported.

@@ -1,0 +1,2 @@
+Main-Class: org.khelekore.Compiler
+Class-Path: ../libs/ecj-3.7.jar
