@@ -1,5 +1,28 @@
 (set-language-environment "UTF-8")
+
+; ido
 (ido-mode t) ; InteractivelyDoThings, improve C-x b
+(add-to-list 'load-path ".emacs.d/elpa/ido-ubiquitous-20140904.1547/")
+(require 'ido-ubiquitous)
+(ido-ubiquitous-mode t)
+;; Fix ido-ubiquitous for newer packages
+(defmacro ido-ubiquitous-use-new-completing-read (cmd package)
+  `(eval-after-load ,package
+     '(defadvice ,cmd (around ido-ubiquitous-new activate)
+        (let ((ido-ubiquitous-enable-compatibility nil))
+          ad-do-it))))
+
+(ido-ubiquitous-use-new-completing-read webjump 'webjump)
+(ido-ubiquitous-use-new-completing-read yas/expand 'yasnippet)
+(ido-ubiquitous-use-new-completing-read yas/visit-snippet-file 'yasnippet)
+
+
+; smex (M-x ido like)
+(add-to-list 'load-path ".emacs.d/elpa/smex-20140425.1314/")
+(require 'smex) ; Not needed if you use package.el
+(smex-initialize)
+(global-set-key "\M-x" 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
 
 ; Activate upcase-region

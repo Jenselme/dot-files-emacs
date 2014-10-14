@@ -11,3 +11,4 @@
 \#*
 .emacs.d/*.dat
 .emacs.d/*.lst
+.emacs.d/eshell
