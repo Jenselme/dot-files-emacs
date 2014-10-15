@@ -1,8 +1,20 @@
 (set-language-environment "UTF-8")
 
+; to load plugins
+(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/elpa/")
+(add-to-list 'load-path "~/.emacs.d/plugins/")
+
+
+; to load packages
+(package-initialize)
+
+
+; org-mode
+(setq org-src-fontify-natively t)
+
 ; ido
 (ido-mode t) ; InteractivelyDoThings, improve C-x b
-(add-to-list 'load-path ".emacs.d/elpa/ido-ubiquitous-20140904.1547/")
 (require 'ido-ubiquitous)
 (ido-ubiquitous-mode t)
 ;; Fix ido-ubiquitous for newer packages
@@ -18,7 +30,6 @@
 
 
 ; smex (M-x ido like)
-(add-to-list 'load-path ".emacs.d/elpa/smex-20140425.1314/")
 (require 'smex) ; Not needed if you use package.el
 (smex-initialize)
 (global-set-key "\M-x" 'smex)
@@ -145,12 +156,3 @@
   )
 (global-set-key (kbd "M-<f8>") 'flyspell-check-next-highlighted-word)
 ;;;;;;					End spell checking
-
-; to load plugins
-(add-to-list 'load-path "~/.emacs.d/")
-(add-to-list 'load-path "~/.emacs.d/elpa/")
-(add-to-list 'load-path "~/.emacs.d/plugins/")
-
-
-; to load packages
-(package-initialize)
