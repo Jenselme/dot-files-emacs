@@ -45,15 +45,15 @@
 
 
 ; jedi: add conditional and doc info. Requires python-jedi
-;(setq jedi:setup-keys t)
-;(setq jedi:complete-on-dot t)
-;(setq jedi:get-in-function-call-delay 1000)
-;(setq jedi:tooltip-method '(popup))
-;(add-hook 'python-mode-hook 'jedi:setup)
-;(eval-after-load "python"
-;  '(define-key python-mode-map "\C-t\C-t" 'jedi:get-in-function-call))
+(setq jedi:setup-keys t)
+(setq jedi:complete-on-dot t)
+(setq jedi:get-in-function-call-delay 1000)
+(setq jedi:tooltip-method '(popup))
+(add-hook 'python-mode-hook 'jedi:setup)
+(eval-after-load "python"
+  '(define-key python-mode-map "\C-t\C-t" 'jedi:get-in-function-call))
 
 ;jedi-direx
-;(eval-after-load "python"
-;  '(define-key python-mode-map "\C-cv" 'jedi-direx:pop-to-buffer))
+(eval-after-load "python"
+  '(define-key python-mode-map "\C-cv" 'jedi-direx:pop-to-buffer))
 ;;;;;; 					fin de la configuration pour python
