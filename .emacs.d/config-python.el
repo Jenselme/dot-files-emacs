@@ -29,7 +29,7 @@
             (add-hook 'post-self-insert-hook
                       #'python-electric-pair-string-delimiter 'append t)))
 
-
+(setq electric-indent-mode nil)
 ; flymake
 (epy-setup-checker "pyflakes %f")
 
