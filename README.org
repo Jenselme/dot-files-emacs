@@ -49,9 +49,7 @@ It is based on ~emacs-for-python~
 - Current indentation is highlighted
 - On the fly syntax checking
 - Ipython support
-- Jedi (contextual information such as function doc) is currently disabled
-  because it requires python-ecb which is not available as a rpm package on
-  fedora yet. I may work on that soon.
+- Jedi for a nice autocomplete and on the fly help.
 
 ** Others
 Much more basic support right now. Read the files to know what is supported.
