@@ -92,6 +92,7 @@
 (define-key global-map (kbd "RET") 'newline-and-indent)
 (setq c-default-style "linux"
       c-basic-offset 4)
+(setq-default indent-tabs-mode nil)
 
 
 ; fill paragraph
