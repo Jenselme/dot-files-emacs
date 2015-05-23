@@ -73,6 +73,9 @@ The argument leftBracket rightBracket are strings."
 
 
 ; Load language specific configuration
+; docker
+(require 'dockerfile-mode)
+(add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
 ; LaTeX
 (load-file "~/.emacs.d/config-latex.el")
 ; python
@@ -93,3 +96,5 @@ The argument leftBracket rightBracket are strings."
 (load-file "~/.emacs.d/config-ruby.el")
 ;java does not work properly
 ;(load-file "~/.emacs.d/config-java.el")
+; javascript
+(load-file "~/.emacs.d/config-javascript.el")
