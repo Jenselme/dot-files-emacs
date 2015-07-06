@@ -4,6 +4,7 @@
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/elpa/")
 (add-to-list 'load-path "~/.emacs.d/plugins/")
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/")
 
 
 ; to load packages
@@ -52,6 +53,14 @@
 
 ; associate extensions with an precise emacs mode
 (add-to-list 'auto-mode-alist '("\\.creole\\'" . creole-mode))
+
+
+; templating
+(require 'mmm-auto)
+(setq mmm-global-mode 'maybe)
+(load "~/.emacs.d/plugins/mmm-mako.el")
+(add-to-list 'auto-mode-alist '("\\.mako\\'" . html-mode))
+(mmm-add-mode-ext-class 'html-mode "\\.mako\\'" 'mako)
 
 
 ; Allow use of below keys
