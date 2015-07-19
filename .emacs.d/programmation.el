@@ -98,3 +98,5 @@ The argument leftBracket rightBracket are strings."
 ;(load-file "~/.emacs.d/config-java.el")
 ; javascript
 (load-file "~/.emacs.d/config-javascript.el")
+; rust
+(load-file "~/.emacs.d/config-rust.el")
