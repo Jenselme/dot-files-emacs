@@ -1,9 +1,9 @@
 (set-language-environment "UTF-8")
 
 ; to load plugins
-(add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/elpa/")
 (add-to-list 'load-path "~/.emacs.d/plugins/")
+(add-to-list 'load-path "~/.emacs.d/plugins/org-reveal/")
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/")
 
 

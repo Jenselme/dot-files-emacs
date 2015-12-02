@@ -78,8 +78,6 @@ The argument leftBracket rightBracket are strings."
 (add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
 ; LaTeX
 (load-file "~/.emacs.d/config-latex.el")
-; python
-(load-file "~/.emacs.d/config-python.el")
 ;perl
 (load-file "~/.emacs.d/config-perl.el")
 ;php
@@ -100,3 +98,7 @@ The argument leftBracket rightBracket are strings."
 (load-file "~/.emacs.d/config-javascript.el")
 ; rust
 (load-file "~/.emacs.d/config-rust.el")
+; shell
+(load-file "~/.emacs.d/config-shell.el")
+; python
+(load-file "~/.emacs.d/config-python.el")
