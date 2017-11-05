@@ -1,0 +1,29 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/jenselme/Documents/" . "todo/")
+ ("/home/jenselme/" . "Documents/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/jenselme/Documents/todo/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "a_faire.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/jenselme/Documents/todo/" (22688 19460 581040 67000) "a_faire.org" "projets.org~" "projets.org" "a_faire.org_archive~" "a_faire.org_archive" "../" "./")
+
+ ("/home/jenselme/Documents/" (22688 26364 675343 872000) "films_livres.md" "films_livres.md~" "bookmarks-2017-02-07.json" "poids.ods" "release-monitoring.ods" "todo/" "thunderbird_personnal.ldif" "thunderbird_foceen.ldif" "thunderbird_collected.ldif" "seafile-ignore.txt" "Papiers_Factures/" "owncloud.ldif" "LibreOffice/" "jujens.vcf" "jujens.ics" "JCB/" "https___www.apache.org_licenses_icla_filled.pdf" "HomeBank/" "en-vadrouille-commande.pdf" "Ecrits/" "Divers/" "Demenaguide_La_Poste.pdf" "defaultcalendar.ics" "CV_EN/" "CV/" "cv.tar.gz" "courriers/" "Contributor Agreements/" "Contacts.vcf" "certs/" "android/" "../" "./")
+
+ ("/home/jenselme/" (22689 30445 432214 590000) ".zsh_history" ".httpie/" ".yarnrc" ".viminfo" ".perl6/" ".v8flags.5.1.281.89.jenselme.json" ".gnome2_private/" ".gnome2/" ".gnome/" ".lesshst" ".python_history" "unison.log" "Microsoft/" ".vscode/" ".uml/" ".unison/" ".yarn/" ".ipython/" ".gradle/" ".cargo/" ".qgis/" ".node-gyp/" ".m2/" ".jspm/" ".pgadmin3" ".thumbnails/" ".gimp-2.8/" ".wget-hsts" ".Skype/" ".fedora/" ".gnupg/" ".zcompdump-baley-5.2" ".FBReader/" ".manuel.d/" ".pgadmin_histoqueries" ".psql_history" "pgadmin.log" ".v8flags.5.1.281.84.jenselme.json" ".hgexternalcache/" ".nv/" ".babel.json" ".npm-packages/" "README.org" ".gitmodules" ".emacs" ".emacs.d/" ".netbeans/" ".pgpass" ".netrc" ".npmrc" ".npm/" "fedora-browser-cert.p12" ".gtk-bookmarks" ".virtualenvs/" ".zsh-update" "bin/" "README.md" ".zshrc" ".profile" ".oh-my-zsh-custom/" ".oh-my-zsh/" ".nanorc" ".mrconfig" ".hgrc" ".hgignore" ".gitignore_global" ".gitconfig" ".functions" ".bashrc" ".aliases" ".gitignore.d/" "server/" "rpmbuild/" "Dropbox/" "Work/" "WData/" "Data/" "fedora-scm/" "Pictures/" "Videos/" "Music/" ".java/" ".nbi/" "IDE/" "Projects/" ".pki/" "Seafile/" ".ccnet/" ".bash_history" ".ssh/" "Documents/" "Public/" "Templates/" "Downloads/" "Desktop/" ".esd_auth" ".local/" ".config/" ".ICEauthority" ".cache/" ".bash_profile" ".bash_logout" ".mozilla/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
